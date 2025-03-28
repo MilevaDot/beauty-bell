@@ -1,0 +1,8 @@
+:root {
+    --background: hsl(313, 74%, 93%);
+    --button: hsl(326, 66%, 65%);
+}
+
+* {
+    background-color: var(--background);
+}
