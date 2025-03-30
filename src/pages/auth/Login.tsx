@@ -1,12 +1,13 @@
 import { Box, Button, FormControl, Heading, Text } from "@chakra-ui/react"
 import { FaLock, FaUser } from "react-icons/fa"
 import InputLogin from "./InputLogin"
+import { Link } from "react-router-dom"
 
 const Login = () => {
     return (
         <Box
             w='250px'
-            margin='200px auto'
+            margin='80px auto'
             display='flex'
             flexDirection='column'
             gap='1em'
@@ -27,7 +28,9 @@ const Login = () => {
                     inputName='password'
                     inputPlaceholder='Contraseña' />
             </FormControl>
-            <Text textAlign='end' fontSize='0.7em'>Eres nuevo? Regístrate</Text>
+            <Link to='/register'>
+                <Text textAlign='end' fontSize='0.7em'>Eres nuevo? Regístrate</Text>
+            </Link>
             <Button
                 backgroundColor='var(--button)'
                 type='submit'

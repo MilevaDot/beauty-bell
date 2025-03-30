@@ -1,0 +1,26 @@
+.videoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    height: 100%;
+}
+
+.inactive {
+    display: none;
+}
+
+.boxHover {
+    width: 344px;
+    height: 229px;
+    background-color: var(--button-transparent);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cardContainer:hover .boxHover {
+    display: block;
+}

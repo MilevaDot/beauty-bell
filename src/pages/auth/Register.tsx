@@ -1,11 +1,11 @@
-import { Box, Button, FormControl, FormLabel, Heading, Input } from "@chakra-ui/react"
+import { Box, Button, FormControl, FormLabel, Heading } from "@chakra-ui/react"
 import InputRegister from "./inputRegister"
 
 const Register = () => {
     return (
         <Box
             w='452px'
-            margin='200px auto'
+            margin='140px auto'
             display='flex'
             flexDirection='column'
             gap='1em'

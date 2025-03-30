@@ -1,15 +1,19 @@
-import { HStack } from "@chakra-ui/react"
+import { Box, HStack, Image } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
     return (
         <>
-            <HStack justify='end'>
-                <Link to='/'>Home</Link>
-                <Link to='/'>About us</Link>
-                <Link to='/'>Contact us</Link>
-                <Link to='/login'>Sign in</Link>
-                <Link to='/register'>Sign up</Link>
+            <HStack justify='space-around' backgroundColor='transparent' position='fixed' width='100%'>
+                <Link to='/'>
+                    <Image src='src\assets\logo-removebg-preview.png' alt='Logo' w='140px'/>
+                </Link>
+                <Box display='flex' gap='20px' color='var(--background)'>
+                    <Link to='/'>NOSOTROS</Link>
+                    <Link to='/'>SERVICIOS</Link>
+                    <Link to='/'>BLOG</Link>
+                    <Link to='/login'>INGRESAR</Link>
+                </Box>
             </HStack>
         </>
     )
