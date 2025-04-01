@@ -55,44 +55,64 @@ const Home = () => {
                         Cuidado, Protección, Salud, Estética y Belleza
                     </Heading>
                 </Box>
-                <HStack margin='50px auto' justify='center' wrap='wrap' gap='2em'>
-                    <Card maxW='sm'>
-                        <CardBody position='relative' overflow='hidden' className='cardContainer'>
-                            <Box className='boxHover inactive'>
+                <HStack margin='50px auto' justify='center' wrap='wrap' gap='2em' overflow='hidden'>
+                    <Card
+                        maxW='sm'
+                        position='static'
+                        >
+                        <CardBody
+                            overflow='hidden'
+                            className='cardContainer'
+                            >
+                            <Box id='cardBody1' className='boxHover inactive'>
                                 <Box height='100%' w='100%' display='flex' alignItems='center' justifyContent='center' color='white'>
                                     <Heading>Gel</Heading>
                                 </Box>
                             </Box>
                             <Image
-                                src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                                src='src\assets\gel.jpg'
                                 borderRadius='lg'
                                 className='cardImage'
+                                objectFit='cover'
+                                overflow='hidden'
                                 />
                         </CardBody>
                     </Card>
-                    <Card maxW='sm'>
-                        <CardBody position='relative' overflow='hidden' className='cardContainer'>
-                            <Box className='boxHover inactive'>
+                    <Card
+                        maxW='sm'
+                        position='static'
+                        >
+                        <CardBody
+                            overflow='hidden'
+                            className='cardContainer'
+                            >
+                            <Box id='cardBody2' className='boxHover inactive'>
                                 <Box height='100%' w='100%' display='flex' alignItems='center' justifyContent='center' color='white'>
                                     <Heading>Esmaltado</Heading>
                                 </Box>
                             </Box>
                             <Image
-                                src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                                src='src\assets\esmaltado.jpg'
                                 borderRadius='lg'
                                 className='cardImage'
                                 />
                         </CardBody>
                     </Card>
-                    <Card maxW='sm'>
-                        <CardBody position='relative' overflow='hidden' className='cardContainer'>
-                            <Box className='boxHover inactive'>
+                    <Card
+                        maxW='sm'
+                        position='static'
+                        >
+                        <CardBody
+                            overflow='hidden'
+                            className='cardContainer'
+                            >
+                            <Box id='cardBody3' className='boxHover inactive'>
                                 <Box height='100%' w='100%' display='flex' alignItems='center' justifyContent='center' color='white'>
                                     <Heading>Ojo de gato</Heading>
                                 </Box>
                             </Box>
                             <Image
-                                src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+                                src='src\assets\eyecat.jpg'
                                 borderRadius='lg'
                                 className='cardImage'
                                 />

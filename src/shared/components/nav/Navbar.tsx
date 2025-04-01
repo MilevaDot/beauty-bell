@@ -1,10 +1,30 @@
 import { Box, HStack, Image } from "@chakra-ui/react"
+import { useState } from "react"
 import { Link } from "react-router-dom"
+import './navbar.css'
+
 
 const Navbar = () => {
+    const [color, setColor] = useState(false)
+
+    const changeColor = () => {
+        if ( window.scrollY >= 200 ) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor)
+
     return (
         <>
-            <HStack justify='space-around' backgroundColor='transparent' position='fixed' width='100%'>
+            <HStack
+                justify='space-around'
+                backgroundColor='transparent'
+                position='fixed'
+                width='100%'
+                className={color ? 'navbar-bg' : ''}
+                >
                 <Link to='/'>
                     <Image src='src\assets\logo-removebg-preview.png' alt='Logo' w='140px'/>
                 </Link>

@@ -1,7 +1,7 @@
 :root {
     --background: hsl(313, 74%, 93%);
     --button: hsl(326, 66%, 65%);
-    --button-transparent: hsla(326, 66%, 65%, 0.5);
+    --button-transparent: hsla(326, 66%, 65%, 0.8);
 }
 
 * {

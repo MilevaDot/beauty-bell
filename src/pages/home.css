@@ -14,7 +14,6 @@
 
 .boxHover {
     width: 344px;
-    height: 229px;
     background-color: var(--button-transparent);
     position: absolute;
     overflow: hidden;
@@ -23,4 +22,17 @@
 
 .cardContainer:hover .boxHover {
     display: block;
+    overflow: hidden;
+}
+
+#cardBody1 {
+    height: 612.4px;
+}
+
+#cardBody2 {
+    height: 366.63px;
+}
+
+#cardBody3 {
+    height: 428.74px;
 }
