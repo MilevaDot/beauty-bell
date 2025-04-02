@@ -23,6 +23,7 @@ const Navbar = () => {
                 backgroundColor='transparent'
                 position='fixed'
                 width='100%'
+                zIndex={9999}
                 className={color ? 'navbar-bg' : ''}
                 >
                 <Link to='/'>

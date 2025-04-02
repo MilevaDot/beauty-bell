@@ -10,10 +10,10 @@ const AppRoutes = () => {
         <Routes>
             <Route element={ <BaseOutlet /> }>
                 <Route path='/' element={ <Home /> } />
-                <Route path='/login' element={ <Login /> } />
-                <Route path='/register' element={ <Register /> } />
                 <Route path='*' element={ <NotFound /> } />
             </Route>
+                <Route path='/login' element={ <Login /> } />
+                <Route path='/register' element={ <Register /> } />
         </Routes>
     )
 }

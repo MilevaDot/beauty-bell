@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .video {
@@ -23,16 +24,4 @@
 .cardContainer:hover .boxHover {
     display: block;
     overflow: hidden;
-}
-
-#cardBody1 {
-    height: 612.4px;
-}
-
-#cardBody2 {
-    height: 366.63px;
-}
-
-#cardBody3 {
-    height: 428.74px;
 }
