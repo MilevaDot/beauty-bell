@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from 'react-icons/fa'
 const Home = () => {
     return (
         <>
-            <Box className='videoContainer'>
+            <Box className='videoContainer' mt="-64px">
                 <video autoPlay loop muted playsInline className='video'>
                     <source src='src\assets\libro.mp4' type='video/mp4'/>
                 </video>

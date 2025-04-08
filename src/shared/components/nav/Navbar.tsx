@@ -1,5 +1,5 @@
 import { Box, HStack, Image } from "@chakra-ui/react"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import './navbar.css'
 
@@ -14,7 +14,14 @@ const Navbar = () => {
             setColor(false)
         }
     }
-    window.addEventListener('scroll', changeColor)
+
+    useEffect(()=>{
+        window.addEventListener('scroll', changeColor)
+        return ()=>{
+            window.addEventListener('scroll', changeColor)
+        }
+    },[] )
+    
 
     return (
         <>
@@ -26,12 +33,12 @@ const Navbar = () => {
                 className={color ? 'navbar-bg' : ''}
                 >
                 <Link to='/'>
-                    <Image src='src\assets\logo-removebg-preview.png' alt='Logo' w='140px'/>
+                    <Image src='src\assets\logo-removebg-preview.png' backgroundColor='transparent'  alt='Logo' w='220px' className="logo"/ >
                 </Link>
-                <Box display='flex' gap='20px' color='var(--background)'>
+                <Box display='flex' gap='20px' color='var(--background)' backgroundColor='transparent'>
                     <Link to='/'>NOSOTROS</Link>
                     <Link to='/'>SERVICIOS</Link>
-                    <Link to='/'>BLOG</Link>
+                    <Link to='/blog'>BLOG</Link>
                     <Link to='/login'>INGRESAR</Link>
                 </Box>
             </HStack>
